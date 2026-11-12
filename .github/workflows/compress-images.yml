@@ -13,8 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
-    name: calibreapp/image-actions
+  compress:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -23,8 +22,13 @@ jobs:
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           jpegQuality: '82'
           pngQuality: '82'
           webpQuality: '82'
-          ignorePaths: 'node_modules/**'
+          compressOnly: 'true'
+
+      - name: Commit compressed images
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-compress images"
