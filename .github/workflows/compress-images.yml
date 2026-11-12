@@ -1,6 +1,8 @@
 name: Compress Images
 on:
   push:
+    branches:
+      - main
     paths:
       - '**.jpg'
       - '**.jpeg'
@@ -25,3 +27,4 @@ jobs:
           jpegQuality: '82'
           pngQuality: '82'
           webpQuality: '82'
+          ignorePaths: 'node_modules/**'
