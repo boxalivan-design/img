@@ -3,7 +3,7 @@
 <head>
 <meta name="color-scheme" content="light dark" />
 <meta name="supported-color-schemes" content="light dark" />
-<title> Meet your new daily ritual — Luma Botanics </title>
+<title>Meet your new daily ritual — Luma Botanics</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="x-apple-disable-message-reformatting" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,11 @@
     supported-color-schemes: light dark;
   }
 
+  .dark-logo {
+    display: none !important;
+    mso-hide: all !important;
+  }
+
   @media (prefers-color-scheme: dark) {
     body, .main-bg { background-color: #1a1a1a !important; }
     .dark-block { background-color: #262626 !important; }
@@ -29,7 +34,8 @@
     .dark-muted { color: #b0b0b0 !important; }
     .dark-link { color: #f6b21d !important; }
     .keep-dark-text { color: #2d2d2d !important; }
-    img.convert-to-white { filter: brightness(0) invert(1) !important; }
+    .light-logo { display: none !important; }
+    .dark-logo { display: block !important; }
   }
 
   [data-ogsc] body, [data-ogsc] .main-bg { background-color: #1a1a1a !important; }
@@ -38,6 +44,8 @@
   [data-ogsc] .dark-muted { color: #b0b0b0 !important; }
   [data-ogsc] .dark-link { color: #f6b21d !important; }
   [data-ogsc] .keep-dark-text { color: #2d2d2d !important; }
+  [data-ogsc] .light-logo { display: none !important; }
+  [data-ogsc] .dark-logo { display: block !important; }
 </style>
 <style type="text/css">
 @media only screen and (max-width: 600px) {
@@ -61,7 +69,7 @@
 </head>
 <body class="main-bg" style="overflow: auto; padding: 0; margin: 0; font-size: 14px; font-family: Arial, Helvetica, sans-serif; cursor: auto; background-color: #a7a7a7;">
 
-<!-- Preheader -->
+<!-- a -->
 <div style="display: none; max-height: 0px; overflow: hidden; mso-hide: all; font-size: 1px; line-height: 1px; color: #a7a7a7;">
   Discover a simple way to care for your skin with our newest botanical serum.
   &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
@@ -75,7 +83,7 @@
     <td valign="top">
       <table class="rtable" style="width: 600px; margin: 0 auto;" cellspacing="0" cellpadding="0" width="600" align="center" border="0">
         
-        <!-- Header & Logo -->
+        <!-- b -->
         <tr>
           <td class="contenttd dark-block" bgcolor="#feffff" style="padding: 20px 15px; text-align: center; background-color: #feffff;">
             <p style="font-size: 12px; margin: 0 0 18px 0; font-family: Arial, Helvetica, sans-serif; color: #8b8b8b; text-align: center; line-height: 18px; mso-line-height-rule: exactly;" align="center">
@@ -84,14 +92,17 @@
             <table style="margin: 0 auto;" cellspacing="0" cellpadding="0" align="center" border="0">
               <tr>
                 <td style="padding: 2px;" align="center">
-                  <img style="border: none; display: block; width: 172px; height: auto;" alt="Logo Luma Botanics" src="https://img.mailmuse.top/luma_logo.png" width="172" />
+                  <img class="light-logo" style="border: none; display: block; width: 172px; height: auto;" alt="Logo Luma Botanics" src="https://img.mailmuse.top/luma_light_logo.png" width="172" />
+                  <!--[if !mso]><!-->
+                  <img class="dark-logo" style="border: none; display: none; width: 172px; height: auto;" alt="Logo Luma Botanics" src="https://img.mailmuse.top/luma_dark_logo.png" width="172" />
+                  <!--<![endif]-->
                 </td>
               </tr>
             </table>
           </td>
         </tr>
 
-        <!-- Hero Image -->
+        <!-- c -->
         <tr>
           <td class="contenttd dark-block" bgcolor="#feffff" style="padding: 0; text-align: center; background-color: #feffff;">
             <table class="imgtable" style="margin: 0 auto;" cellspacing="0" cellpadding="0" align="center" border="0">
@@ -104,7 +115,7 @@
           </td>
         </tr>
 
-        <!-- Main Offer & CTA -->
+        <!-- d -->
         <tr>
           <td class="contenttd" bgcolor="#f5b21d" style="border-top: 5px solid #f6b21d; padding: 28px 25px; text-align: center; background-color: #f5b21d;">
             <p class="keep-dark-text" style="font-size: 22px; margin: 0 0 10px 0; font-family: Arial, Helvetica, sans-serif; color: #2d2d2d; text-align: center; line-height: 32px; mso-line-height-rule: exactly;" align="center">
@@ -114,7 +125,7 @@
               Discover a simple way to care for your skin with our newest botanical serum.
             </p>
 
-            <!-- Button -->
+            <!-- e -->
             <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
               <tr>
                 <td align="center" bgcolor="#d8232a" style="border-radius: 4px; background-color: #d8232a;">
@@ -135,7 +146,7 @@
           </td>
         </tr>
 
-        <!-- Footer -->
+        <!-- f -->
         <tr>
           <td class="contenttd dark-block" bgcolor="#feffff" style="padding: 24px 20px; text-align: center; background-color: #feffff;">
             <p class="dark-text" style="font-size: 13px; margin: 0 0 10px 0; font-family: Arial, Helvetica, sans-serif; color: #595959; font-weight: bold; text-align: center; line-height: 18px; mso-line-height-rule: exactly;" align="center">
@@ -163,7 +174,4 @@
 </table>
 </body>
 </html>
-
-
-
 
