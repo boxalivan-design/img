@@ -20,8 +20,10 @@
 <style>
   :root { color-scheme: light dark; supported-color-schemes: light dark; }
   html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
-  body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #eeeeee; font-family: Arial, Helvetica, sans-serif; }
+  body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100%; background-color: #eeeeee; font-family: Arial, Helvetica, sans-serif; }
   table, td { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  /* Outlook / Android text auto-enlargement */
+  td, p, h1, h2, h3 { max-height: 1000000px; }
   img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
   h1, h2, h3, p { margin: 0; }
   a { color: #176b50; }
@@ -37,6 +39,8 @@
     .img-fluid { width: 100% !important; max-width: 100% !important; height: auto !important; }
     .px { padding-left: 16px !important; padding-right: 16px !important; }
     .intro { padding: 28px 16px !important; }
+    .logo { font-size: 22px !important; line-height: 28px !important; letter-spacing: 0 !important; }
+    .tag { font-size: 12px !important; line-height: 16px !important; }
     .h1 { font-size: 24px !important; line-height: 30px !important; }
     .h2 { font-size: 22px !important; line-height: 28px !important; }
     .desc { height: auto !important; }
@@ -83,7 +87,7 @@
   <!-- VIEW IN BROWSER -->
   <tr>
     <td align="center" class="px" style="padding:12px 20px 0 20px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px; color:#595959;">
-      <a class="t-muted" href="https://img.mailmuse.top/view/northline-spring-collection-fixed-mm.html" style="color:#595959; text-decoration:underline;">View in browser</a>
+      <a class="t-muted" href="https://img.mailmuse.top/view/northline-spring-collection-mailmuse.html" style="color:#595959; text-decoration:underline;">View in browser</a>
     </td>
   </tr>
 
@@ -91,9 +95,9 @@
   <tr>
     <td align="center" class="px" style="padding:20px 25px 25px 25px;">
       <a href="https://example.com?utm_source=email&amp;utm_medium=newsletter&amp;utm_campaign=spring" style="text-decoration:none;">
-        <span class="t-head" style="font-family:Arial, Helvetica, sans-serif; font-size:30px; line-height:36px; font-weight:bold; color:#203b32; letter-spacing:1px;">NORTHLINE</span>
+        <span class="t-head logo" style="font-family:Arial, Helvetica, sans-serif; font-size:30px; line-height:36px; font-weight:bold; color:#203b32; letter-spacing:1px;">NORTHLINE</span>
       </a>
-      <p class="t-muted" style="margin:6px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color:#595959;">
+      <p class="t-muted tag" style="margin:6px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color:#595959;">
         OUTDOOR EQUIPMENT &amp; APPAREL
       </p>
     </td>
@@ -101,8 +105,8 @@
 
   <!-- HERO -->
   <tr>
-    <td style="padding:0; font-size:0; line-height:0;">
-      <a href="https://example.com/collection?utm_source=email&amp;utm_medium=newsletter&amp;utm_campaign=spring&amp;utm_content=hero" style="text-decoration:none;">
+    <td width="100%" align="center" style="padding:0; font-size:0; line-height:0;">
+      <a href="https://example.com/collection?utm_source=email&amp;utm_medium=newsletter&amp;utm_campaign=spring&amp;utm_content=hero" style="display:block; text-decoration:none;">
         <img class="img-fluid" src="https://img.mailmuse.top/travel.png" width="600" height="300" alt="Northline Spring Collection: outdoor equipment and apparel" style="display:block; width:100%; max-width:600px; height:auto; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;">
       </a>
     </td>
@@ -145,7 +149,7 @@
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td align="center" style="padding:10px 10px 0 10px;">
-              <a href="https://example.com/jacket?utm_source=email&amp;utm_medium=newsletter&amp;utm_campaign=spring&amp;utm_content=jacket" style="text-decoration:none;">
+              <a href="https://example.com/jacket?utm_source=email&amp;utm_medium=newsletter&amp;utm_campaign=spring&amp;utm_content=jacket" style="display:block; text-decoration:none;">
                 <img class="img-fluid" src="https://img.mailmuse.top/jacket.png" width="270" height="200" alt="Trail Jacket" style="display:block; width:100%; max-width:270px; height:auto; border:0; border-radius:4px; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;">
               </a>
               <h3 class="t-head" style="margin:14px 0 6px 0; font-family:Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; font-weight:bold; color:#203b32; text-align:center;">Trail Jacket</h3>
@@ -168,7 +172,7 @@
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td align="center" style="padding:10px 10px 0 10px;">
-              <a href="https://example.com/backpack?utm_source=email&amp;utm_medium=newsletter&amp;utm_campaign=spring&amp;utm_content=backpack" style="text-decoration:none;">
+              <a href="https://example.com/backpack?utm_source=email&amp;utm_medium=newsletter&amp;utm_campaign=spring&amp;utm_content=backpack" style="display:block; text-decoration:none;">
                 <img class="img-fluid" src="https://img.mailmuse.top/backpack.png" width="270" height="200" alt="Explorer Backpack" style="display:block; width:100%; max-width:270px; height:auto; border:0; border-radius:4px; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic;">
               </a>
               <h3 class="t-head" style="margin:14px 0 6px 0; font-family:Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; font-weight:bold; color:#203b32; text-align:center;">Explorer Backpack</h3>
@@ -225,8 +229,7 @@
         Northline Outdoor
       </p>
       <p class="t-muted" style="margin:0 0 12px 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color:#595959;">
-        [Legal company name], [Street address], [City, Postal code, Country]
-      </p>
+        Private company, Mezhygorska Street 46, Kyiv, 04071 Ukraine</p>
       <p class="t-muted" style="margin:0 0 12px 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color:#595959;">
         You are receiving this email because you subscribed to our newsletter.
       </p>
